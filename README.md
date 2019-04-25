@@ -11,6 +11,12 @@ This repository is implementation of the ["Accelerating the Super-Resolution Con
 
 ## Requirements
 
+- PyTorch 1.0.0
+- Numpy 1.15.4
+- Pillow 5.4.1
+- h5py 2.8.0
+- tqdm 4.30.0
+
 ## Train
 
 The 91-image, Set5 dataset converted to HDF5 can be downloaded from the links below.
