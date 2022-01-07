@@ -16,6 +16,7 @@ This repository is implementation of the ["Accelerating the Super-Resolution Con
 - Pillow 5.4.1
 - h5py 2.8.0
 - tqdm 4.30.0
+- Skimage
 
 ## Train
 
