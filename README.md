@@ -56,10 +56,19 @@ Pre-trained weights can be downloaded from the links below.
 | FSRCNN(56,12,4) | 4 | [Download](https://www.dropbox.com/s/vsvumpopupdpmmu/fsrcnn_x4.pth?dl=0) |
 
 The results are stored in the same path as the query image.
+For testing on single image, you can use `test.py` as follows.
 
 ```bash
 python test.py --weights-file "BLAH_BLAH/fsrcnn_x3.pth" \
                --image-file "data/butterfly_GT.bmp" \
+               --scale 3
+```
+
+For testing on multiple images, you can use it as follows.
+
+```bash
+python test.py --weights-file "BLAH_BLAH/fsrcnn_x3.pth" \
+               --image-dir "data_directory" \
                --scale 3
 ```
 
