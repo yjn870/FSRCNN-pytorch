@@ -56,6 +56,11 @@ def preprocess(img, device):
     x = x.unsqueeze(0).unsqueeze(0)
     return x, ycbcr
 
+def calc_ssim(img1,img2):
+    from skimage.metrics import structural_similarity as ssim
+    score = ssim(img1.cpu().numpy().squeeze(0).squeeze(0),img2.cpu().numpy().squeeze(0).squeeze(0))
+    return score
+
 
 def calc_psnr(img1, img2):
     return 10. * torch.log10(1. / torch.mean((img1 - img2) ** 2))
